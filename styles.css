@@ -1,6 +1,6 @@
 :root {
-  --header-height: 56px;
-  --text-size: 10px;
+  --header-height: 50px;
+  --text-size: 12px;
   --max-width: 1100px;
   --gap: 14px;
   --pad: 16px;
@@ -17,7 +17,7 @@ body {
   margin: 0;
   font-family: "Baskerville", "Libre Baskerville", "Baskerville Old Face", "Times New Roman", serif;
   font-size: var(--text-size);
-  line-height: 1.35;
+  line-height: 1;
   color: #111;
   background: #fff;
 }
@@ -64,7 +64,7 @@ a.underline { text-decoration: underline; }
 .brand .name {
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  /*text-overflow: ellipsis;*/
   font-weight: 400;
 }
 
