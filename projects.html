@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <img src="assets/logo.png" alt="Logo" />
+        <span class="name">YOUR NAME</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="container">
+      <h1 class="page-title">Projects</h1>
+
+      <section class="gallery" aria-label="Project gallery">
+        <!-- Duplicate these cards as you add projects -->
+        <article class="card">
+          <img src="assets/project1.png" alt="Project 1 image" />
+          <div class="card-body">
+            <h2 class="card-title">Project title 1</h2>
+            <p class="card-text">Short description text for project 1.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/project2.png" alt="Project 2 image" />
+          <div class="card-body">
+            <h2 class="card-title">Project title 2</h2>
+            <p class="card-text">Short description text for project 2.</p>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    // Optional but useful: keep --vh consistent if you rotate the phone on this page too
+    function setVh() {
+      document.documentElement.style.setProperty('--vh', (window.innerHeight * 0.01) + 'px');
+    }
+    setVh();
+    window.addEventListener('resize', setVh);
+  </script>
+</body>
+</html>

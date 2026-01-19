@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <img src="assets/logo.png" alt="Logo" />
+        <span class="name">YOUR NAME</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="container">
+      <section class="contact">
+        <h1 class="page-title">Contact</h1>
+
+        <p>
+          A short paragraph about you. Replace this with your background, what you do, and what you’re open to.
+        </p>
+
+        <p>
+          Email: <a class="underline" href="mailto:you@example.com">you@example.com</a>
+        </p>
+
+        <p>
+          Instagram:
+          <a class="underline" href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer">
+            @yourhandle
+          </a>
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    function setVh() {
+      document.documentElement.style.setProperty('--vh', (window.innerHeight * 0.01) + 'px');
+    }
+    setVh();
+    window.addEventListener('resize', setVh);
+  </script>
+</body>
+</html>

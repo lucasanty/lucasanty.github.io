@@ -1,11 +1,40 @@
-<!DOCTYPE html>
-<html lang=“en”>
-	<head>
-		<title>Luca Santy</title>
-	</head>
-	<body>	
-		<h1>Hallo.</h1>
-		<p>Paragraaf.</p>
-		<img src=“images/gil_255_1.png” height=“200” width=“200” />
-	</body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="home">
+  <header class="header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <img src="assets/logo.png" alt="Logo" />
+        <span class="name">YOUR NAME</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="home-hero">
+      <img src="assets/hero.png" alt="Hero image" />
+    </section>
+  </main>
+
+  <script>
+    // Fix mobile 100vh issues by using a CSS variable
+    function setVh() {
+      document.documentElement.style.setProperty('--vh', (window.innerHeight * 0.01) + 'px');
+    }
+    setVh();
+    window.addEventListener('resize', setVh);
+  </script>
+</body>
 </html>
